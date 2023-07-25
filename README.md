@@ -22,6 +22,9 @@ Our website and app work seamlessly together, ensuring that any blueprints uploa
 
 With FactorioBlueprints.com, you can easily share your creations, find innovative solutions, and be part of the thriving Factorio community. Embrace your love for engineering and dive into the world of Factorio blueprinting today!
 
+## Link to the website (Temporary Domain)
+https://factorio-blueprint--maker.web.app/
+
 ## Getting Help
 For help, support, discussion or bugs please contact us at liam_nordvall@hotmail.com
 
