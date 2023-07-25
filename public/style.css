@@ -15,7 +15,7 @@ main {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(350px, 30%, 550px);
+  width: clamp(300px, 30%, 550px);
   border-radius: 20px;
   background: rgba(43, 43, 43, 0.8);
 }
@@ -184,6 +184,11 @@ main {
   color: rgb(202, 202, 202);
 }
 
+
+
+
+
+
 @media (max-width: 500px) {
 
   .loginContainer .inputForm input {
@@ -228,7 +233,7 @@ main {
     width: min-content;
     left: 0;
     transform: translateX(0);
-    margin: 20px 10px;
+    margin: 30px 10px 20px;
   }
 
   .SigninWithSteam img,
