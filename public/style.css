@@ -35,7 +35,7 @@ main {
 .loginContainer h1, h2 {
   position: relative;
   display: block;
-  left: 8%;
+  left: 10%;
   font-family: sans-serif;
 }
 
@@ -46,7 +46,7 @@ main {
   font-family: sans-serif;
   display: block;
   margin-top: 10px;
-  left: 8%;
+  left: 10%;
   transition: .5s;
 }
 
@@ -316,7 +316,7 @@ main {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color:rgba(43, 43, 43, 0.8);
+    background-color:rgba(31, 31, 31, 0.9);
     justify-content: center;
     backdrop-filter: blur(2px);
     align-items: center;
@@ -346,5 +346,7 @@ main {
   }
   .navbar .nav-links button {
     padding: 20px 40px;
+    font-size: 0.8em;
+    color: rgb(53, 53, 53);
   }
-}s
+}

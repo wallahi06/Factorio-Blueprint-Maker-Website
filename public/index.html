@@ -34,30 +34,35 @@
       </div>
     </div>
 
-    
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="./assets/factorio_blueprint_maker_logo.png"></a>
-      <div class="nav-links">
-          <ul>
-              <li><a href="#">Explore</a></li>
-              <li><a href="#">Donate</a></li>
-              <li><a href="#">Login</a></li>
-              <li><button type="button" class="signupBtn_nav">Signup</button></li>
-          </ul>
-      </div>
-      <img src="./assets/menu-button.png" alt="menu hamburger" class="menu-hamburger">
-  </nav>
+    <nav></nav>
+  
   </main>
 
 
   <script>
 
-    const menuHamburger = document.querySelector(".menu-hamburger");
-    const navLinks = document.querySelector(".nav-links");
+    document.addEventListener("DOMContentLoaded", function() {
+      // Use AJAX to fetch the header.html content
+      fetch("header.html")
+        .then(response => response.text())
+        .then(data => {
+          // Insert the header content into the <nav> element
+          const navElement = document.querySelector("nav");
+          navElement.innerHTML = data;
+        }).then(() => {
+          const menuHamburger = document.querySelector(".menu-hamburger");
+          const navLinks = document.querySelector(".nav-links");
 
-    menuHamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("mobile-menu");
-    })
+          menuHamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("mobile-menu");
+        })
+        })
+        .catch(error => {
+          console.error("Error fetching header.html:", error);
+        });
+    });
+
+
 
 </script>
 
