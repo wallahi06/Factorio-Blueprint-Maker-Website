@@ -58,21 +58,21 @@ body {
   position: relative;
   left: 50%;
   transform: translate(-50%);
-  margin-top: 100px;
-  width: 530px;
+  margin-top: 5%;
+  width: 480px;
   background-color: rgba(24, 24, 24, 0.67);
   border-radius: 15px;   
 }
 
 .test2 {
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .login-container .input-form {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: calc(90% - 130px);
+  width: 350px;
   display: flex;
   flex-direction: column;
   font-family: "inter";
@@ -135,8 +135,8 @@ body {
 }
 
 .login-container .input-form .link-forgotpassword {
-  margin-left: auto;
   margin-top: 5px;
+  margin-left: auto;
 }
 
 .login-container .input-form .or-container {
@@ -187,5 +187,150 @@ body {
   background-color:rgb(15,23,42);
   color: white;
 }
+
+
+@media (width <= 480px) {
+  
+/* Login Container */
+.login-container {
+  background: none;
+}
+
+.login-container .input-form h2 {
+  font-size: 15px;
+}
+
+.login-container .input-form h1 {
+  font-size: 30px;
+}
+
+.login-container .input-form button {
+  width: 240px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.login-container .input-form input {
+  width: 240px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.login-container .input-form a {
+  font-size: 12px;
+}
+
+.login-container .input-form .or-container {
+  width: 240px;
+  margin-top: 10px;
+}
+
+.login-container .input-form .link-notmember {
+  padding: 20px 0 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signinWithGoogle, .signinWithSteam {
+  margin-top: 10px;  
+}
+
+}
+
+@media (width <= 1024px) {
+/* Login Container */
+
+  .login-container {
+    width: 430px;
+  }
+
+  .login-container .input-form {
+    width: 315px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .login-container .input-form h2 {
+    font-size: 22px;
+  }
+
+  .login-container .input-form h1 {
+    font-size: 39px;
+  }
+
+  .login-container .input-form label {
+    font-size: 12px;
+  }
+
+  .login-container .input-form button {
+    width: 315px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .login-container .input-form input {
+    width: 315px;
+    height: 45px;
+    font-size: 13px;
+  }
+
+  .login-container .input-form a {
+    font-size: 12px;
+  }
+
+  .login-container .input-form .or-container {
+    width: 315px;
+    margin-top: 20px;
+  }
+
+  .login-container .input-form .link-notmember {
+    padding: 30px 0 40px 0;
+  }
+
+  .signinWithGoogle p, .signinWithSteam p {
+    font-size: 14px;
+  }
+
+  .signinWithGoogle img, .signinWithSteam img {
+    width: 32px;
+  }
+}
+
+@media (width <= 320px) { 
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media (width <=  260px) { 
+  body {
+    zoom: 0.6;
+  }
+}
+
+@media (width <= 200px) { 
+  body {
+    zoom: 0.4;
+  }
+}
+
+@media (width <= 140px) { 
+  body {
+    zoom: 0.3;
+  }
+}
+
+@media (width <= 100px) { 
+  body {
+    zoom: 0.2;
+  }
+}
+
+@media (width <= 60px) { 
+  body {
+    zoom: 0.1;
+  }
+}
+
 
 
