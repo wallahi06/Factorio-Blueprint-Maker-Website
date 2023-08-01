@@ -1,78 +1,54 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Factorio Blueprint Maker | Share and Manage your Blueprints</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="https://user-images.githubusercontent.com/86798194/235517557-1c94bc25-061f-4e37-929e-fbf264b89dbd.png">
     <link rel="stylesheet" href="style.css">
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /> 
-    <meta property="og:site_name" content="Factorio Blueprint Maker" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:title" content="Factorio Blueprint Maker" />
-    <meta property="og:description" content="Share and manage your Factorio Blueprints" />
-    <meta property="og:url" content="https://factorio-blueprint--maker.web.app/" />
-    <meta property="og:image" content="https://user-images.githubusercontent.com/86798194/235298223-7e389598-37b4-4652-94bd-2dba2ab90153.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poiret+One&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   </head>
-  <body>
-    <main>
-    <div class="loginContainer">
-      <h1>Welcome</h1>
-      <h2>Sign in to continue</h2>
-      <div class="inputForm">
-        <form>
-          <input type="text" id="signinEmail" class="signinEmail" placeholder="Please enter your email">
-          <input type="password" id="signinPassword" class="signinPassword" placeholder="Please enter your password">
-          <a href="#">Forgot Password?</a>
-          <button type="button">Signin</button>
-        </form>
-      </div>
-      <div class="GoogleAndSteamForm">
-        <div class="SigninWithGoogle">
-          <img src="./assets/google_logo.png">
-          <div class="textContainer">Sign in with Google</div>
+  <body>  
+        <div class="navbar">
+          <div class="logo">
+            <a href="#"><img src="assets/factorio_blueprint_maker_logo.png"></a>
+          </div>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="#">Explore</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Signup</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="SigninWithSteam">
-          <img src="./assets/steam_logo.png">
-          <div class="textContainer">Sign in with Steam</div>
+    <div class="test2">
+    <div class="login-container">
+      <div class="input-form">
+        <h1>Welcome</h1>
+        <h2>Signin to continue</h2>
+        <div class="test">
+          <label>Email</label>
+          <input type="text" class="email-input" placeholder="Enter your Email">
+          <label>Password</label>
+          <input type="password" class="password-input" placeholder="Enter your Password">
+          <button class="signin-button">Signin</button>
         </div>
+        <a href="#" class="link-forgotpassword">Forgot Password?</a>
+        <div class="or-container">
+          <hr><h4>or</h4><hr>
+        </div>
+        <button class="signinWithGoogle">
+          <img src="assets/google_logo.png">
+          <p>Signin with Google</p>
+        </button>
+        <button class="signinWithSteam">
+          <img src="assets/steam_logo.png">
+          <p>Signin with Steam</p>
+        </button>
+
+        <a href="#" class="link-notmember">Not member? Signup</a>
       </div>
-      <div class="notAMember">
-        <a href="#">Not a Member? Singup</a>
-      </div>
-    </div>
-
-    <nav></nav>
-  
-  </main>
-
-
-  <script>
-
-    document.addEventListener("DOMContentLoaded", function() {
-      // Use AJAX to fetch the header.html content
-      fetch("header.html")
-        .then(response => response.text())
-        .then(data => {
-          // Insert the header content into the <nav> element
-          const navElement = document.querySelector("nav");
-          navElement.innerHTML = data;
-        }).then(() => {
-          const menuHamburger = document.querySelector(".menu-hamburger");
-          const navLinks = document.querySelector(".nav-links");
-
-          menuHamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("mobile-menu");
-        })
-        })
-        .catch(error => {
-          console.error("Error fetching header.html:", error);
-        });
-    });
-
-
-
-</script>
-
-  
+  </div>
+</div>
   </body>
 </html>
