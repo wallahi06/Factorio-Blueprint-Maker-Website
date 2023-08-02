@@ -365,4 +365,43 @@ body {
 
 
 
+@media screen and (max-width: 320px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  body {
+    zoom: 0.6;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  body {
+    zoom: 0.4;
+  }
+}
+
+@media screen and (max-width: 140px) {
+  body {
+    zoom: 0.3;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  body {
+    zoom: 0.2;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  body {
+    zoom: 0.1;
+  }
+}
+
+
+
+
 
