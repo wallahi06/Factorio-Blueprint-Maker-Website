@@ -12,14 +12,18 @@
         <div class="logo">
           <a href="#"><img src="assets/factorio_blueprint_maker_logo.png"></a>
         </div>
+        
         <div class="navbar-links">
           <ul>
+            <img src="assets/factorio_blueprint_maker_logo.png" class="menu-hamburger-logo">
             <li><a href="#">Explore</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Signup</a></li>
           </ul>
         </div>
+        <img src="./assets/menu-button.png" alt="menu" class="menu-hamburger">
+
       </div>
     <div class="test2">
     <div class="login-container">
@@ -31,7 +35,7 @@
           <input type="text" class="email-input" placeholder="Enter your Email">
           <label>Password</label>
           <input type="password" class="password-input" placeholder="Enter your Password">
-          <button class="signin-button">Signin</button>
+          <button class="signin-button">Sign In</button>
         </div>
         <a href="#" class="link-forgotpassword">Forgot Password?</a>
         <div class="or-container">
@@ -39,16 +43,25 @@
         </div>
         <button class="signinWithGoogle">
           <img src="assets/google_logo.png">
-          <p>Signin with Google</p>
+          <p>Sign in with Google</p>
         </button>
         <button class="signinWithSteam">
           <img src="assets/steam_logo.png">
-          <p>Signin with Steam</p>
+          <p>Sign in with Steam</p>
         </button>
 
-        <a href="#" class="link-notmember">Not member? Signup</a>
+        <a href="#" class="link-notmember">Not a member? Signup</a>
       </div>
   </div>
 </div>
+
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger")
+  const navLinks = document.querySelector(".navbar-links")
+
+  menuHamburger.addEventListener('click',()=>{
+  navLinks.classList.toggle('mobile-menu')
+  })
+</script>
   </body>
 </html>
