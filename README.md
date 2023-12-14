@@ -1,5 +1,4 @@
-![Namnlös design](https://user-images.githubusercontent.com/86798194/235298223-7e389598-37b4-4652-94bd-2dba2ab90153.png)
-
+![Namnlös](https://github.com/wallahi06/Factorio-Blueprint-Maker-Website/assets/86798194/2ef72187-e4ef-4998-91ef-32ecc0a0fc10)
 # Factorio Blueprint Maker Website
 
 ### Blueprint Sharing Made Easy:
